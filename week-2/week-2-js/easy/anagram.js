@@ -6,8 +6,8 @@
 
 function isAnagram(str1, str2) {  
     // Remove spaces and convert to lowercase
-    let cleanedStr1 = str1.replace(/\s+/g, '').toLowerCase();
-    let cleanedStr2 = str2.replace(/\s+/g, '').toLowerCase();
+    let cleanedStr1 = str1.split(' ').join('').toLowerCase();
+    let cleanedStr2 = str2.split(' ').join('').toLowerCase();
 
     // If the cleaned strings have different lengths, they can't be anagrams
     if (cleanedStr1.length !== cleanedStr2.length) {
